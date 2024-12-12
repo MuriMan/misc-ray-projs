@@ -20,18 +20,15 @@ void parse_file(vector<string>* q, vector<string>* a, string filepath)
 			if (line == "---") 
 			{
 				is_q = !is_q;
-				std::cout << "toggled" << std::endl;
 			}
 			else if (is_q)
 			{
 				q->push_back(line);
-				std::cout << "questioned" << std::endl;
 				std::cout << line << std::endl;
 			}
 			else
 			{
 				a->push_back(line);
-				std::cout << "answered" << std::endl;
 				std::cout << line << std::endl;
 			}
 		}

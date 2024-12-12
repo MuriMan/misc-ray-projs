@@ -4,6 +4,7 @@
 using std::vector, std::string;
 
 #include "./file_parsing.cpp"
+#include "./display.cpp"
 
 vector<string> questions;
 vector<string> answers;
@@ -11,13 +12,15 @@ vector<string> answers;
 void start()
 {
 	parse_file(&questions, &answers, "./base.txt");
+	load_iosevka();
 }
 
 void update()
 {
+	
 }
 
 void draw()
 {
-	DrawText("HI", 0, 0, 100, WHITE);
+	display_qna(&questions, &answers);
 }

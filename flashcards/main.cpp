@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	InitWindow(400, 400, "HI");
+	InitWindow(800, 450, "HI");
 	start();
 
 	while (!WindowShouldClose())
@@ -11,7 +11,7 @@ int main(void)
 		update();
 
 		BeginDrawing();
-			ClearBackground(BLACK);
+			ClearBackground(BBG);
 			draw();
 		EndDrawing();
 	}
